@@ -23,7 +23,7 @@ module PeriodicTable
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
-
+    
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
@@ -31,8 +31,9 @@ module PeriodicTable
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-
+    
     # Don't generate system test files.
+    config.hosts << "3000-cyan-pig-0filg4bd.ws-us15.gitpod.io"
     config.generators.system_tests = nil
   end
 end
