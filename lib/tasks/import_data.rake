@@ -14,8 +14,7 @@ namespace :import do
                                   :xpos, :ypos, :shells )
       element_params[:shells] = element_params[:shells].to_s
       Element.create!(element_params)
-
-      puts "#{args[:file]} was imported sucessfully"
     end
+    puts "#{args[:file]} was imported sucessfully"
   end
 end
