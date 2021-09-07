@@ -1,18 +1,16 @@
-<div class="container">
-  <div class="row">
-    <ul>
-    <% @elements.each do |element| %>
-      <li>
-        <%= element.name %>
-        <%= element.number %>-
-        <%= element.period %>,
-        <%= element.atomic_mass %>
-      </li>
+
+
+<table>
+  <tbody>
+    <% 9.times do |i| %>
+      <tr>
+        <% 14.times do |j| %>
+          <td class="element" data-xpos="<%= i+1 %>" data-ypos="<%= j+1 %>"></td>
+        <% end %>
+      </tr>
     <% end %>
-    </ul>
-  </div>
-</div>
+  </tbody>
+</table>
 
 <%= javascript_pack_tag 'elements' %>
-
 

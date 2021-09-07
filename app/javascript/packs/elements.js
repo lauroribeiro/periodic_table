@@ -1,1 +1,1 @@
-alert("to aqui")
+console.log("oi")
