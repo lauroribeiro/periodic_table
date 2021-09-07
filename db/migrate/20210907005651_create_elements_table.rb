@@ -1,15 +1,15 @@
-class CreateTable < ActiveRecord::Migration[6.1]
+class CreateElementsTable < ActiveRecord::Migration[6.1]
   def change
-    create_table :table do |t|
+    create_table :elements do |t|
       t.string :name
-      t.string :atomic_mass
+      t.decimal :atomic_mass
       t.integer :number
       t.integer :period
       t.string :category
       t.string :symbol
       t.integer :xpos
       t.integer :ypos
-      t.string :shell
+      t.string :shells
 
       t.timestamps
     end
