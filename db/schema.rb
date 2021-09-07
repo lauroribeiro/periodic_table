@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_07_005651) do
+ActiveRecord::Schema.define(version: 2021_09_07_140043) do
 
-  create_table "table", force: :cascade do |t|
+  create_table "elements", force: :cascade do |t|
     t.string "name"
     t.string "atomic_mass"
     t.integer "number"
