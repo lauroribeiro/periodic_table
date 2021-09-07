@@ -4,6 +4,6 @@ class ElementsController < ApplicationController
   end
 
   def show
-    @element = Element.find(params[:id])
+    @element = Element.find_by_name(params[:name])
   end
 end
