@@ -1,16 +1,64 @@
 @import "~bootstrap";
 
-body {
-  background: #313435;
-  color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	box-sizing:border-box;	
 }
 
-.element {
-  border: 1px solid;
-  border-collapse: collapse;
-  height: 50px;
-  width: 50px;
+body {
+  // background: #313435;
+  // color: whitesmoke;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // // font-size: .75em;
+}
+// main {
+//   margin:auto;
+// 	max-width:45em;
+// }
+
+#grid-container {
+  margin-top: 5em;
+  display: grid;
+  height: 700px;
+  width: 1300px;
+  position: relative;
+  gap: 10px;
+  margin: auto;
+  grid-template-columns: repeat(18, 100px);
+  grid-template-rows: repeat(7, 100px) 100px repeat(2, 100px);
+}
+
+
+section{
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	align-items: flex-start;
+  justify-content: center;
+	border:1px solid;
+  padding-left: 3px;
+}
+
+span{
+	font-size:.75em;
+	// position: absolute;
+	// top:.3em;
+	// left:.5em;	
+}
+
+
+h2{
+	font-size:25px;
+  margin-bottom: 0;
+}
+p {
+  // margin-top: 0;
+  margin-bottom: 0;
+}
+p:last-child{
+	font-size:.8em;	
 }

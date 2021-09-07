@@ -1,1 +1,2 @@
-console.log("oi")
+elements = Array.from(document.querySelectorAll(".element"));
+

@@ -1,16 +1,15 @@
-
-
-<table>
-  <tbody>
-    <% 9.times do |i| %>
-      <tr>
-        <% 14.times do |j| %>
-          <td class="element" data-xpos="<%= i+1 %>" data-ypos="<%= j+1 %>"></td>
-        <% end %>
-      </tr>
+<main>
+  <div id="grid-container">
+    <% @elements.each do |element| %>
+      <section class="<%= "element #{element.category} #{element.symbol}" %>">
+        <span><%= element.number %></span>
+        <h2><%= element.symbol %> </h2>
+        <p><%= element.name %> </p>
+        <p><%= element.atomic_mass %></p>
+      </section>
     <% end %>
-  </tbody>
-</table>
+  </div>
+</main>
 
 <%= javascript_pack_tag 'elements' %>
 
