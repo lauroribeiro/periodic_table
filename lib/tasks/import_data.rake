@@ -12,8 +12,8 @@ namespace :import do
                                   .slice( :name, :atomic_mass, :number,
                                   :period, :category, :symbol,
                                   :xpos, :ypos, :shells )
-      element_params[:shells] = table_params[:shells].to_s
-      Element.create!(table_params)
+      element_params[:shells] = element_params[:shells].to_s
+      Element.create!(element_params)
     end
   end
 end
