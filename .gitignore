@@ -50,8 +50,6 @@ yarn-debug.log*
 .yarn-integrity
 /nbproject/private/
 
-/config/database.yml
-config/database.yml
 
 /config/credentials/production.key
 
