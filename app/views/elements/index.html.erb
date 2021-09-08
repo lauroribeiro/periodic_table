@@ -1,11 +1,13 @@
 <main>
   <div id="grid-container">
     <% @elements.each do |element| %>
-      <section class="<%= "element #{element.category} #{element.symbol}" %>">
+      
+      <% element.xpos += 1 if element.number.between?(57,71) || element.number.between?(89,103) %>
+      <section class="<%= "element #{element.category.split(/,/).join(" ")} #{element.symbol}" %>"  style="grid-column-start:<%= element.xpos %>;grid-row-start:<%= element.ypos %>;">
         <span><%= element.number %></span>
         <h2><%= element.symbol %> </h2>
         <p><%= element.name %> </p>
-        <p><%= element.atomic_mass %></p>
+        <p><%= element.atomic_mass.truncate(4) %></p>
       </section>
     <% end %>
   </div>
