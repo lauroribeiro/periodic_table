@@ -10,7 +10,8 @@
 	--metalloid:		hsl(165deg, 58%, 76%);
 	--nonmetal:			hsl(120deg, 73%, 74%);
 	--noble:			hsl(300deg, 44%, 82%);
-  --unknown:			#676;
+  --unknown-noble:			rgb(167, 136, 167);
+  --unknown-alkali:			rgb(151, 133, 63);
 }
 
 .alkali{
@@ -57,10 +58,15 @@
   color: var(--noble);
 }
 
-// .unknown{
-//   border: 1px solid var(--unknown);
-//   color: var(--unknown);
-// }
+.alkali.unknown{
+  border: 1px solid var(--unknown-alkali);
+  color: var(--unknown-alkali);
+}
+
+.noble.unknown{
+  border: 1px solid var(--unknown-noble) !important;
+  color: var(--unknown-noble) !important;
+}
 
 *{
 	margin:0;
