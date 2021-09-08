@@ -127,6 +127,29 @@ p:last-child{
 	font-size:.8em;	
 }
 
+.placeholder{
+  grid-column: 3;
+  grid-row: 6 / 11;
+  background-color: rgba(232, 232, 241, 0.13);
+}
+
+.placeholder-text{
+  text-align: center;
+  font-weight: lighter;
+  font-size: 20px;
+  align-self: center;
+}
+
+#placeholder-1{
+  grid-column: 3;
+  grid-row: 6;
+}
+
+#placeholder-2{
+  grid-column: 3;
+  grid-row: 7;
+}
+//<h2 id="placeholder">89-103</h2>
 // .He {
 //   grid-column: 18;
 // }
