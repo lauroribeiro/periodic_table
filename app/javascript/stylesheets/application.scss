@@ -166,9 +166,8 @@ a, a:link, a:visited, a:hover {
 //show page
 
 .show {
-  width: 30vw;
-  height: 30vw;
-  position: relative;
+  margin-top: 10vw;
+  transform: scale(2);
 }
 
 .show > span {

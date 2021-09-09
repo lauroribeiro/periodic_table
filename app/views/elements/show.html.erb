@@ -4,5 +4,6 @@
     <h2><%= @element.symbol %> </h2>
     <p><%= @element.name %> </p>
     <p><%= @element.atomic_mass.truncate(4) %></p>
+    <p><%= @element.shells.to_a.each { |s| s} %></p>
   </section>
 </main>
