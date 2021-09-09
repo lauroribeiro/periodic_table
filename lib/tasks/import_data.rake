@@ -4,15 +4,12 @@ namespace :import do
     puts 'rails import:data[file_path] required' && return unless args[:file]
     puts "Importing file #{args[:file]}"
     
-    # TODO: Escreva o código para importar os dados aqui
     data = JSON.parse(File.read(args[:file]))
     data["order"].each do |element|
-      element_params = data[element].to_h
-                                  .symbolize_keys
-                                  .slice( :name, :atomic_mass, :number,
-                                  :period, :category, :symbol,
-                                  :xpos, :ypos, :shells )
+      element_params = data[element].to_h.symbolize_keys
+                                  
       element_params[:shells] = element_params[:shells].to_s
+      element_params[:ionization_energies] = element_params[:ionization_energies].to_s
       Element.create!(element_params)
     end
     puts "#{args[:file]} was imported sucessfully!"

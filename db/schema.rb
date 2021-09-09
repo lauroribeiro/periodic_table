@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_07_150202) do
+ActiveRecord::Schema.define(version: 2021_09_09_013319) do
 
   create_table "elements", force: :cascade do |t|
     t.string "name"
@@ -24,6 +24,23 @@ ActiveRecord::Schema.define(version: 2021_09_07_150202) do
     t.string "shells"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "appearance"
+    t.decimal "boil"
+    t.string "color"
+    t.string "density"
+    t.string "discovered_by"
+    t.decimal "melt"
+    t.decimal "molar_heat"
+    t.string "named_by"
+    t.string "phase"
+    t.string "source"
+    t.string "spectral_img"
+    t.string "summary"
+    t.string "electron_configuration"
+    t.string "electron_configuration_semantic"
+    t.decimal "electron_affinity"
+    t.decimal "electronegativity_pauling"
+    t.string "ionization_energies"
     t.index ["name"], name: "index_elements_on_name", unique: true
   end
 
