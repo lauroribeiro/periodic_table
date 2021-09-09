@@ -109,11 +109,15 @@ h1{
 
 section{
   position:relative;
-	display:flex;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.attributes{
+  display:flex;
 	flex-direction:column;
 	align-items: flex-start;
   justify-content: center;
-  padding-left: 3px;
 }
 
 span{
@@ -129,7 +133,7 @@ p {
   font-size: 0.5vw;
   margin-bottom: 0;
 }
-p:last-child{
+#atomic-mass{
   font-size:.8em;	
 }
 
@@ -167,7 +171,16 @@ a, a:link, a:visited, a:hover {
 
 .show {
   margin-top: 10vw;
+  display: flex;
+  flex-direction: row;
   transform: scale(2);
+}
+
+.shells {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .show > span {

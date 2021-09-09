@@ -7,10 +7,12 @@
       <% element.xpos += 1 if element.number.between?(57,71) || element.number.between?(89,103) %>
       <section class="<%= "#{element.category.split(/,/).join(" ")} #{element.symbol}" %>" style="grid-column:<%= element.xpos %>;grid-row:<%= element.ypos %>;">
         <%= link_to element_path(element.name) do %>
-          <span><%= element.number %></span>
-          <h2><%= element.symbol %> </h2>
-          <p><%= element.name %> </p>
-          <p><%= element.atomic_mass.truncate(4) %></p>
+          <div class="attributes">
+            <span><%= element.number %></span>
+            <h2><%= element.symbol %> </h2>
+            <p><%= element.name %> </p>
+            <p id="atomic-mass"><%= element.atomic_mass.truncate(4) %></p>
+          </div>
         <% end %>
       </section>
     <% end %>

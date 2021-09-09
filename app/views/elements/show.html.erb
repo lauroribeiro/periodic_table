@@ -1,9 +1,15 @@
 <main>
   <section class="<%= "show #{@element.category.split(/,/).join(" ")} #{@element.symbol}" %>">
-    <span><%= @element.number %></span>
-    <h2><%= @element.symbol %> </h2>
-    <p><%= @element.name %> </p>
-    <p><%= @element.atomic_mass.truncate(4) %></p>
-    <p><%= @element.shells.to_a.each { |s| s} %></p>
+    <div class="attr">
+      <span><%= @element.number %></span>
+      <h2><%= @element.symbol %> </h2>
+      <p><%= @element.name %> </p>
+      <p><%= @element.atomic_mass.truncate(4) %></p>
+    </div>
+    <div class="shells">
+      <% @element.shells.split(/\D/).reject(&:empty?).each do |shell| %>
+        <p><%= shell %></p>
+      <% end %>
+    </div>
   </section>
 </main>
