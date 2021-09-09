@@ -169,24 +169,27 @@ a, a:link, a:visited, a:hover {
 
 //show page
 
-
+#show-element{
+  max-width: 50vw;
+  max-height: 50vh;
+}
 #show-number{
-  font-size: 2rem;
+  font-size: 2.5vw;
 }
 #show-symbol{
-  font-size: 6rem;
+  font-size: 8vw;
 }
 #show-name{
-  font-size: 2rem;
+  font-size: 2.5vw;
 }
 #show-mass{
-  font-size: 2rem;
+  font-size: 2.5vw;
 }
 .shells{
-  font-size: 1.5rem;
+  font-size: 2vw;
 }
 #attr-table{
-  max-height: 40vh;
+  max-height: 50vh;
 }
 // .show {
 //   margin-top: 10vw;

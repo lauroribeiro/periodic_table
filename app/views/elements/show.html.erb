@@ -1,8 +1,8 @@
 <main>
 <div class="container">
   <div class="d-flex flex-column justify-content-center">
-    <div class="container d-flex justify-content-center col-3 p-0 <%= "show #{@element.category.split(/,/).join(" ")} #{@element.symbol}" %>">
-      <div class="d-flex flex-row justify-content-center w-100">
+    <div class="container d-flex justify-content-center col-4 p-0 <%= "show #{@element.category.split(/,/).join(" ")} #{@element.symbol}" %>">
+      <div id="show-element" class="d-flex flex-row justify-content-center w-100">
         <div id="attributes" class="cointainer d-flex flex-column text-left w-80 p-2">
           <span id="show-number" ><%= @element.number %></span>
           <h2 id="show-symbol" ><%= @element.symbol %> </h2>
