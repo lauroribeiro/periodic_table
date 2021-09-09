@@ -183,16 +183,16 @@ a, a:link, a:visited, a:hover {
   align-items: center;
 }
 
-.show > span {
+.show > div.attr >  span {
   font-size: 1vw;
 }
 
-.show > h2 {
-  font-size: 5vw;
+.show > div.attr > h2 {
+  font-size: 4vw;
 }
-.show > p {
+.show > div.attr > p {
   font-size: 2vw;
 }
-.show > p:last-child {
+.show > div.attr > p:last-child {
   font-size: 1vw;
 }
