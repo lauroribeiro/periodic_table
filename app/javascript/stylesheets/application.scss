@@ -169,30 +169,49 @@ a, a:link, a:visited, a:hover {
 
 //show page
 
-.show {
-  margin-top: 10vw;
-  display: flex;
-  flex-direction: row;
-  transform: scale(2);
-}
 
-.shells {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#show-number{
+  font-size: 2rem;
 }
+#show-symbol{
+  font-size: 6rem;
+}
+#show-name{
+  font-size: 2rem;
+}
+#show-mass{
+  font-size: 2rem;
+}
+.shells{
+  font-size: 1.5rem;
+}
+#attr-table{
+  max-height: 40vh;
+}
+// .show {
+//   margin-top: 10vw;
+//   display: flex;
+//   flex-direction: row;
+//   transform: scale(2);
+// }
 
-.show > div.attr >  span {
-  font-size: 1vw;
-}
+// .shells {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
 
-.show > div.attr > h2 {
-  font-size: 4vw;
-}
-.show > div.attr > p {
-  font-size: 2vw;
-}
-.show > div.attr > p:last-child {
-  font-size: 1vw;
-}
+// .show > div.attr >  span {
+//   font-size: 1vw;
+// }
+
+// .show > div.attr > h2 {
+//   font-size: 4vw;
+// }
+// .show > div.attr > p {
+//   font-size: 2vw;
+// }
+// .show > div.attr > p:last-child {
+//   font-size: 1vw;
+// }
