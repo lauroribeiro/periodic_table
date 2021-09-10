@@ -19,7 +19,14 @@
     <div id="attr-table" class="container mt-2 col-8 p-0 overflow-auto">
       <table class="table table-sm table-dark table-striped table-hover table-bordered border-primary">
         <tbody>
-          <% @element.attributes.each do |key, value| %>
+          <tr>
+            <th scope="row">Summary</th>
+            <td><%= @element.summary %></td>
+          </tr>
+          <% @element.attributes.symbolize_keys
+                                .except(:id, :name, :atomic_mass, :xpos, :ypos, :shells, 
+                                        :shell, :created_at, :updated_at, :summary)
+                                .each do |key, value| %>
             <tr>
               <th scope="row" class="text-capitalize"><%= key %></th>
               <td><%= value %></td>
