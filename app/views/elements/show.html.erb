@@ -29,6 +29,7 @@
                                   .each do |key, value| %>
               <tr>
                 <th scope="row" class="text-capitalize"><%= key %></th>
+                <% value = "-" if value.nil? %>
                 <td><%= value %></td>
               </tr>
             <% end %>
