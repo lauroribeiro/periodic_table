@@ -83,7 +83,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // border: 1px solid whitesmoke;
 }
 
 h1{
@@ -92,10 +91,8 @@ h1{
 
 
 #grid-container {
-  // margin-top: 5em;
   display: grid;
   max-height: 90vh;
-  // max-width: 50vw;
   position: relative;
   gap: 1px;
   background: #313435;
