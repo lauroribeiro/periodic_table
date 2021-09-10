@@ -26,6 +26,7 @@
             <% @element.attributes.symbolize_keys
                                   .except(:id, :name, :atomic_mass, :xpos, :ypos, :shells, 
                                           :shell, :created_at, :updated_at, :summary)
+                                  .sort
                                   .each do |key, value| %>
               <tr>
                 <th scope="row" class="text-capitalize"><%= key %></th>
